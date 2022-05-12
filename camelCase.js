@@ -22,3 +22,8 @@ function toCamelCase(str){
   return newStr;
   
 }
+
+//Refactored solution w/ Regex
+function toCamelCase(str) {
+  return str.replace(/[_-][A-Za-z]/g, function(match) {return match[1].toUpperCase();});
+}
