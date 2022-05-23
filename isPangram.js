@@ -15,3 +15,10 @@ function isPangram(string){
     return string.indexOf(x) !== -1;
   });
 }
+
+//alternate solution 2
+function isPangram(string){
+  return 'abcdefghijklmnopqrstuvwxyz'
+    .split('')
+    .every((x) => string.toLowerCase().includes(x));
+}
