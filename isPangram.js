@@ -22,3 +22,6 @@ function isPangram(string){
     .split('')
     .every((x) => string.toLowerCase().includes(x));
 }
+
+// Notes
+// Every, tests whether all elements in an array passes the test 
