@@ -3,4 +3,5 @@ var maxSequence = function(arr){
     return 0;
   }
   /// order it ascending 
+  // use sort a - b built in javascript method
 }
