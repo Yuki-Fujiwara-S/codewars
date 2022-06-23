@@ -17,9 +17,9 @@ var maxSequence = function(arr){
   for (num of newArr) {
     if (num > 0) {
       negative = false;
+      sum += num;
     }
   }
-  
   
   if (negative) {
     return 0;
