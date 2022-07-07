@@ -1,13 +1,13 @@
 function generateHashtag (str) {
-  let rightArr = str.trim().split("");
+  let rightArr = str.trim().split(" ");
   console.log(rightArr);
   
-  if (rightArr.length === 0) {
+  if (!rightArr[0]) {
     return false;
   }
   
-  rhs = rightArr.map(elm => 
-    elm[0].toUpperCase() + elm.slice(1)
+ rhs = rightArr.map(elm => 
+    elm.charAt(0).toUpperCase() + elm.slice(1)
   );
   
   let result = "#" + rhs.join("");
@@ -16,3 +16,5 @@ function generateHashtag (str) {
     return false;
   }
   
+  return result;
+}
